@@ -1,0 +1,1 @@
+const s=e=>/\s/.test(e),a=e=>/[\u4e00-\u9fa5]/.test(e),r=e=>s(e)?{isValid:!1,message:"账号不能包含空格"}:a(e)?{isValid:!1,message:"账号不能包含中文字符"}:{isValid:!0,message:"账号格式正确"},t=e=>s(e)?{isValid:!1,message:"密码不能包含空格"}:a(e)?{isValid:!1,message:"密码不能包含中文字符"}:{isValid:!0,message:"密码格式正确"};export{t as a,r as c};
